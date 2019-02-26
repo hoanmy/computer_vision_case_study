@@ -1,7 +1,7 @@
 import cv2
 from mtcnn.mtcnn import MTCNN
 
-index = 1
+index = 0
 def process_img(input):
     detector = MTCNN()
 
@@ -18,6 +18,6 @@ def process_img(input):
         cv2.imwrite(op, imgDroped)
 
 
-for i in range(1,5):
+for i in range(1,11):
     input = "imgs/img{index}.jpg".format(index=i)
     process_img(input);

@@ -26,7 +26,7 @@ def process_img(input, output):
     cv2.imwrite(output, image)
 
 
-for i in range(1,5):
+for i in range(1,11):
     input = "imgs/img{index}.jpg".format(index=i)
     output = "result/img{index}.jpg".format(index=i)
     process_img(input, output);
