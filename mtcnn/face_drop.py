@@ -13,7 +13,7 @@ def process_img(input):
         index += 1
         bounding_box = item['box']
         keypoints = item['keypoints']
-        imgDroped = image[bounding_box[1]:bounding_box[1] + bounding_box[3], bounding_box[0]:bounding_box[0]+bounding_box[2]]
+        imgDroped = image[(bounding_box[1] - 100):(bounding_box[1] + bounding_box[3] + 100), (bounding_box[0] - 100):(bounding_box[0]+bounding_box[2] + 100)]
         op = "face_drop_result/face_{index}.jpg".format(index=index)
         cv2.imwrite(op, imgDroped)
 
