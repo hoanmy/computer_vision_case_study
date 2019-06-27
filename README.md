@@ -6,7 +6,6 @@ Nhận xét:
 
 2/ Số lượng hình dùng train quá ít, chất lượng thấp
 
-3/ Các thông số cần tinh chỉnh hơn cho phù hợp.
 
 
 -------------------------------***************----------------------------------
